@@ -46,11 +46,11 @@ header {
 
 #navbar {
     background: var(--secondary);
-    width: 30%;
+    
     flex: 30%;
     padding: 1em 0em;
     max-width: 250px;
-    position: sticky;
+    position: fixed;
     top: 0;
     height: 100vh;
 }
@@ -81,6 +81,7 @@ header {
     width: 70%;
     flex: 70%;
     padding: 1em .6em;
+    margin-left: 220px;
 }
 
 @media (max-width: 700px) {
@@ -89,11 +90,12 @@ header {
     }
 
     #navbar {
+        position: static;
         width: 100%;
         flex: 100%;
         padding: .6em .0em;
         max-width: 100%;
-        height: 33vh;
+        height: 132px;
     }
 
     .nav-link {
@@ -107,5 +109,7 @@ header {
         width: 100%;
         flex: 100%;
         padding: .6em .4em;
+        margin-top:100px;
+        margin-left: 0px;
     }
 }
