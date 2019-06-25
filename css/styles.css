@@ -22,3 +22,48 @@ img {
     width: 300px;
     height: auto;
 }
+
+/* Layout */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#navbar {
+    background: orange;
+    width: 30%;
+    flex: 30%;
+    padding: .6em .4em;
+    max-width: 250px;
+}
+
+#main-doc {
+    background: lightseagreen;
+    width: 70%;
+    flex: 70%;
+    padding: .6em .4em;
+}
+
+
+@media (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #navbar {
+        background: greenyellow;
+        width: 100%;
+        flex: 100%;
+        padding: .6em .4em;
+        max-width: 100%;
+    }
+    
+    #main-doc {
+        background: lightseagreen;
+        width: 100%;
+        flex: 100%;
+        padding: .6em .4em;
+    }   
+}
