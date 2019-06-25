@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="row">
+
+        <nav id="navbar">
+            <header>CSS Grid</header>
+            <ul>
+                <li><a class="nav-link" href="#Grid_Layout">Grid Layout</a></li>
+                <li><a class="nav-link" href="#Grid_Elements">Grid Elements</a></li>
+                <li><a class="nav-link" href="#Display_Property">Display Property</a></li>
+                <li><a class="nav-link" href="#Grid_Columns">Grid Columns</a></li>
+                <li><a class="nav-link" href="#Grid_Rows">Grid Rows</a></li>
+            </ul>
+        </nav>
+
+        <main id="main-doc">
+
+            <section class="main-section" id="Grid_Layout">
+                <header>Grid Layout</header>
+                <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier
+                    to
+                    design web pages without having to use floats and positioning.</p>
+                <p>The grid properties are supported in all modern browsers.</p>
+                <ul>
+                    <li>Google Chrome</li>
+                    <li>Edge</li>
+                    <li>Firefox</li>
+                    <li>Safari</li>
+                    <li>Opera</li>
+                </ul>
+                <code>
+                    .grid-container {
+                    display: grid;
+                    }
+                </code>
+            </section>
+
+            <section class="main-section" id="Grid_Elements">
+                <header>Grid Elements</header>
+                <p>A grid layout consists of a parent element, with one or more child elements.</p>
+                <p>Example</p>
+                <code>
+                    &#60;class="grid-container&#62;<br>
+                        &#60;div&#62; class="grid-item">1 &#60;/div&#62; <br>
+                        &#60;div&#62; class="grid-item">2 &#60;/div&#62; <br>
+                        &#60;div&#62; class="grid-item">3 &#60;/div&#62; <br>
+                        &#60;div&#62; class="grid-item">4 &#60;/div&#62; <br>
+                        &#60;div&#62; class="grid-item">5 &#60;/div&#62; <br>
+                        &#60;div&#62; class="grid-item">6 &#60;/div&#62; <br>
+                        &#60;div&#62; class="grid-item">7 &#60;/div&#62; <br>
+                        &#60;div&#62; class="grid-item">8 &#60;/div&#62; <br>
+                        &#60;div&#62; class="grid-item">9 &#60;/div&#62; <br>
+                        &#60;class="grid-container/&#62;<br>
+                </code>
+                <img src="img/Selección_415.png" alt="">
+            </section>
+
+            <section class="main-section" id="Display_Property">
+                <header>Display Property</header>
+                <p>An HTML element becomes a grid container when its display property is set to grid or inline-grid.</p>
+                <p>Example</p>
+                <code>
+                    
+                    .grid-container {
+                    display: grid;
+                    }
+
+                    .grid-container {
+                    display: inline-grid;
+                    }
+
+                </code> 
+                <p>All direct children of the grid container automatically become grid items.</p>
+            </section>
+
+            <section class="main-section" id="Grid_Columns">
+                <header>Grid Columns</header>
+                <p>The vertical lines of grid items are called columns.</p>
+                <p>View</p>
+                <img src="img/grid_columns.png" alt="grid columns">
+                <code>
+                    .grid-container {
+                    display: grid;
+                    grid-column: 10px;
+                    }
+                </code>
+            </section>
+
+            <section class="main-section" id="Grid_Rows">
+                <header>Grid Rows</header>
+                <p>The horizontal lines of grid items are called rows</p>
+                <p>View</p>
+                <img src="img/grid_rows.png" alt="grid row">
+                <code>
+                    .grid-container {
+                    display: grid;
+                    grid-row: 10px;
+                    }
+                </code>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

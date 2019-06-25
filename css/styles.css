@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2196f3;
+    --secondary: #D3EAFC;
+    --tercery: #f3e721;
+    --quartery: #f37e21;
+    --white: #fff;
+    --black: #000;
+}
+
+ul, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
